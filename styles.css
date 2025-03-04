@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #8ec5fc, #a6c1ee, #ffdde1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.reasons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reason-item {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.photo-gallery {
+    position: relative;
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.photo-button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.photo-button:hover {
+    background: #e91e63;
+}
+
+.special-message {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+}
+
+.toast {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
